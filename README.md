@@ -1,0 +1,11 @@
+# README
+- API tutorial - https://www.youtube.com/watch?v=FJiIvFoxqsc 0:00 - 4:43
+    - Streak (Stripe rival for payment processing)
+- rails new streak --api
+- set route in route.rb
+    - resources :payments, only: :index --GET /payments
+- rails g controller PaymentsController index
+- payments_controller in index action
+ - head :ok
+- rails s
+    - curl http://localhost:3000/payments -v
